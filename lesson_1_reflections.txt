@@ -1,0 +1,32 @@
+LESSON 1
+----------------
+
+1. How did diff between two versions help you spot the bug?
+
+diff -u game_old.js game_new.js (Mac/Linux)
+fc game_old.js game_new.js (Win)
+
+Showed diff b/w files with line nos.
+
+2. How could having easy access to the entire history of 
+a file make you a more efficient programmer in the long term?
+
+Lets us know where we went wrong (last working project)
+git log
+git diff 123456 789012
+
+3. Commit logically and in pieces.
+
+4. Multiple file changes. Repo - collection of files.
+git log --stat (git log with all statistics)
+
+5. 
+git --version
+git clone https://url.com/something.git
+git config --global color.ui auto (Set color in diff for easier analysis)
+git log and git diff can be used to see and compare.
+
+6.
+git checkout ID -> helps in checking out previous commits and look for bugs
+Then "git diff" to see the bug
+git checkout original_commit -> to get back
