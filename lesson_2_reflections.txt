@@ -7,3 +7,13 @@ git status -> to get status and list of files having untracked changes
 
 2.
 git add <file1> <file2> -> adds file to staging area. Lets us group files to be bundled into a commit.
+git reset -> unstage all files
+
+3.
+git checkout master -> go back to master (leave detached HEAD)
+
+git diff -> difference between working dir and staging area
+git diff --staged -> difference between staging area and repo
+git diff commit1 commit2 -> difference between the two commits
+
+git reset --hard -> unstage all files and remove all changes in working directory (IRREVERSIBLE!!!)
