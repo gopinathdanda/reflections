@@ -1,0 +1,9 @@
+Lesson 2
+----------
+
+1.
+git init -> to initialize
+git status -> to get status and list of files having untracked changes
+
+2.
+git add <file1> <file2> -> adds file to staging area. Lets us group files to be bundled into a commit.
