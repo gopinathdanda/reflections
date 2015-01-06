@@ -17,3 +17,10 @@ git diff --staged -> difference between staging area and repo
 git diff commit1 commit2 -> difference between the two commits
 
 git reset --hard -> unstage all files and remove all changes in working directory (IRREVERSIBLE!!!)
+
+4. 
+Branch to try out new stuff. Can be later merged. For branching, LABELS should be used.
+git branch -> show all branches and the current branch I am on
+git branch label -> create branch with label at the current checkout point
+
+Must be careful. All commits can point to only its parent. As a result, branching without labels can make a commit inaccessible.
