@@ -1,15 +1,18 @@
 Lesson 2
-----------
++++++++++++
 
-1.
+1. INITIALIZE
+-----------------
 git init -> to initialize
 git status -> to get status and list of files having untracked changes
 
-2.
+2. ADD
+-----------------
 git add <file1> <file2> -> adds file to staging area. Lets us group files to be bundled into a commit.
 git reset -> unstage all files
 
-3.
+3. MONITORING CHANGES
+-----------------
 git checkout master -> go back to master (leave detached HEAD)
 
 git diff -> difference between working dir and staging area
@@ -18,9 +21,22 @@ git diff commit1 commit2 -> difference between the two commits
 
 git reset --hard -> unstage all files and remove all changes in working directory (IRREVERSIBLE!!!)
 
-4. 
+4. BRANCH
+-----------------
 Branch to try out new stuff. Can be later merged. For branching, LABELS should be used.
 git branch -> show all branches and the current branch I am on
 git branch label -> create branch with label at the current checkout point
 
 Must be careful. All commits can point to only its parent. As a result, branching without labels can make a commit inaccessible.
+
+5. MERGE
+-----------------
+To monitor changes::
+gitk (GUI to see merges, branches, commits, etc.)
+git log --graph --oneline --decorate --all (show merges, branches, commits in the terminal with color coding)
+
+To merge::
+git checkout master (merging on master)
+git merge master branch2 (git merge branch2 branch3 while being on branch1 will merge all three branches)
+git merge -d branch2 (remove label of branch2 as it is not required now)
+
