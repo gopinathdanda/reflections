@@ -10,4 +10,9 @@ Its acts on a branch (i.e. works upward along parents).
 ------------------
 git remote [-v] -> shows the remotes in the current project
 git remote add remote_name remote_url -> add a remote
-git remote remote_name branch_name
+
+3. PUSH AND PULL
+-------------------
+git push remote_name branch_name
+
+
