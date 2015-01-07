@@ -1,0 +1,13 @@
+Lesson 3
++++++++++++++++++++
+
+1. GITHUB
+------------------
+Push or pull commits to or from the remote repo (hosted on Github) on to local.
+Its acts on a branch (i.e. works upward along parents).
+
+2. REMOTE
+------------------
+git remote [-v] -> shows the remotes in the current project
+git remote add remote_name remote_url -> add a remote
+git remote remote_name branch_name
