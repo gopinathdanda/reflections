@@ -17,13 +17,13 @@ git push remote_name branch_name -> push to branch on the remote
 git pull remote_name branch_name -> pull from branch on the remote
 
 4. FORK, CLONES AND BRANCH
--------------------
+-----------------------------
 Fork clones in Github itself (Github feature).
 Clone from existing repo to a new place.
 Branch in a repo.
 
 5. CONFLICT RESOLUTION ON REMOTE AND LOCAL
--------------------
+--------------------------------------------
 If the remote and local has been updated simultaneously, conflicts may arise.
 git fetch origin -> create a branch at the origin/master branch (where last synced with remote) and add all the commits made at remote.
 git pull origin master = 
@@ -31,12 +31,12 @@ git pull origin master =
   git merge master origin/master
 
 6. FAST FORWARD MERGE
--------------------
+-------------------------
 If the two commits are such that we can reach the old commit from the new one (through ancestry), then updating the label to the old 
 label is same as merging.
 
 7. MERGE PULL REQUEST
--------------------
+--------------------------
 On Github, when you are working on a project with another contributor, in case you want to add a new feature
 1. Create a new branch
 2. Change, commit and push (the branch, not master)
@@ -49,3 +49,9 @@ CREATE A BRANCH, MAKE A CHANGE, PUSH THE BRANCH
 CHECK THE BRANCH AND MERGE THE BRANCH
 In case of conflicts, pull the master onto local, resolve conflict, make a fresh commit on your branch, and push branch
 The admin will check the branch and decide on merging the pull request
+
+8. CROSS REPO PULL REQUEST
+------------------------------
+In case you fork a repo and create a branch to make a change in your fork, but by that time, the original repo is changed,
+then create a remote (preferably with name upstream of the original repo) and pull it onto your local, merge your branch,
+and update your fork.
