@@ -38,7 +38,7 @@ git log --graph --oneline --decorate --all (show merges, branches, commits in th
 To merge::
 git checkout branch1 (merging on branch1)
 git merge branch1 branch2 (git merge branch2 branch3 while being on branch1 will merge all three branches)
-git merge -d branch2 (remove label of branch2 as it is not required now)
+git branch -d branch2 (remove label of branch2 as it is not required now)
 
 6. CONFLICT
 -----------------
