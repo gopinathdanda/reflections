@@ -34,3 +34,18 @@ git pull origin master =
 -------------------
 If the two commits are such that we can reach the old commit from the new one (through ancestry), then updating the label to the old 
 label is same as merging.
+
+7. MERGE PULL REQUEST
+-------------------
+On Github, when you are working on a project with another contributor, in case you want to add a new feature
+1. Create a new branch
+2. Change, commit and push (the branch, not master)
+3. The owner of the repo will be able to check the Pull Request on the Github
+4. If he/she is satisfied, he/she can accept the request and merge pull request (with the master)
+5. If he/she is not satisfied, he/she can leave an inline or overall comment message. You can then edit the mistake, commit and push again.
+This is to make sure you don't merge the master without any scrutiny from contributors.
+The formula:
+CREATE A BRANCH, MAKE A CHANGE, PUSH THE BRANCH
+CHECK THE BRANCH AND MERGE THE BRANCH
+In case of conflicts, pull the master onto local, resolve conflict, make a fresh commit on your branch, and push branch
+The admin will check the branch and decide on merging the pull request
